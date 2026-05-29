@@ -171,6 +171,8 @@ module system_top (
     .O (cnv_p),
     .OB (cnv_n),
     .I (cnv_s));
+
+  ad_iobuf #(
     .DATA_WIDTH (32)
   ) iobuf_gpio_bd (
     .dio_i (gpio_o[31:0]),
